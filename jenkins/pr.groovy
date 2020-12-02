@@ -7,7 +7,7 @@ pipeline {
         
     stage('Cloning Git Repo') {
       steps {
-        git 'https://github.com/ToniNichev/projects-sparkjs.git'
+        git 'https://github.com/renatowow14/projects-sparkjs.git'
       }
     }
     stage('Install dependencies') {
@@ -47,7 +47,7 @@ pipeline {
           sh "${scannerHome}/bin/sonar-scanner"
         }
        }
-    }
+    }s
    
     // No need to occupy a node
     stage("Quality Gate"){
